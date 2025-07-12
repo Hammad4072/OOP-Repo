@@ -17,15 +17,25 @@ class pet(ABC):
     def show_info(self): #polymorphism creation (definition or method)
         pass
 
-#inheritence
+#inheritence + polymorphism
 
 class Dog(pet):
     def show_info(self):
-        print("the dog name is :", self.get_name())
+        print("the dog name is :", self.get_name(), "\nAnd its age is :" , self.get_age())
 
+# Inheritance + Polymorphism
+class Cat(pet):
+    def show_info(self):  # Polymorphic method
+        print("The cat named ", self.get_name(), "loves to sleep")
+        print(self.get_name(), "is ", self.get_age(), "years old")
 
-obj = Dog("labre", 3)
-obj.show_info()
+#polymorphism called
+
+Dogg = Dog("labre", 3)
+Dogg.show_info()
+
+Catt = Cat("Persian", 1)
+Catt.show_info()
 
 # obj = pet("labre" , "2 years")   
 # print(obj.get_name())
