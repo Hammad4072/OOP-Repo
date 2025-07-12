@@ -14,7 +14,7 @@ class pet(ABC):
     def set_age(self, age):
         self.__age = age
     @abstractmethod
-    def show_info(self):
+    def show_info(self): #polymorphism creation (definition or method)
         pass
 
 #inheritence
