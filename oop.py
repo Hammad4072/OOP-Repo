@@ -37,6 +37,15 @@ Dogg.show_info()
 Catt = Cat("Persian", 1)
 Catt.show_info()
 
+# Using encapsulation via getter and setter
+
+print("\nUpdating Cat's age using setter...")
+Catt.set_age(4)
+print("The updated cat age is:" , Catt.get_age())
+
+# Show updated info
+Catt.show_info() #polymorphism called
+
 # obj = pet("labre" , "2 years")   
 # print(obj.get_name())
 
